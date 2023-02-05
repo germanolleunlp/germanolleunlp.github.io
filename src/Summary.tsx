@@ -1,9 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 import { TypeAnimation } from 'react-type-animation';
 
 function Summary() {
   return (
-    <h1>
+    <Code>
       <TypeAnimation
         sequence={[
         "I'm a senior web developer.",
@@ -21,8 +22,17 @@ function Summary() {
       I create Websites and Applications.
       <br />
       Based in Santa Fe, Argentina.
-    </h1>
+    </Code>
   );
 }
+
+const Code = styled.h1`
+  margin: auto;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+`
 
 export default Summary;
