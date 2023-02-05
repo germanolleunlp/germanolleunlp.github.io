@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://germanolleunlp.github.io/static/css/main.e6c13ad2.css",
-    "main.js": "https://germanolleunlp.github.io/static/js/main.a847bcea.js",
+    "main.css": "https://germanolleunlp.github.io/static/css/main.b7227c9d.css",
+    "main.js": "https://germanolleunlp.github.io/static/js/main.86804d19.js",
     "static/js/787.8b4e05c0.chunk.js": "https://germanolleunlp.github.io/static/js/787.8b4e05c0.chunk.js",
     "index.html": "https://germanolleunlp.github.io/index.html",
-    "main.e6c13ad2.css.map": "https://germanolleunlp.github.io/static/css/main.e6c13ad2.css.map",
-    "main.a847bcea.js.map": "https://germanolleunlp.github.io/static/js/main.a847bcea.js.map",
+    "main.b7227c9d.css.map": "https://germanolleunlp.github.io/static/css/main.b7227c9d.css.map",
+    "main.86804d19.js.map": "https://germanolleunlp.github.io/static/js/main.86804d19.js.map",
     "787.8b4e05c0.chunk.js.map": "https://germanolleunlp.github.io/static/js/787.8b4e05c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.a847bcea.js"
+    "static/css/main.b7227c9d.css",
+    "static/js/main.86804d19.js"
   ]
 }
