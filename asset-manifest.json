@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/germanolleunlp.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/germanolleunlp.github.io/static/js/main.cda15b43.js",
-    "static/js/787.8b4e05c0.chunk.js": "/germanolleunlp.github.io/static/js/787.8b4e05c0.chunk.js",
-    "static/media/logo.svg": "/germanolleunlp.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/germanolleunlp.github.io/index.html",
-    "main.073c9b0a.css.map": "/germanolleunlp.github.io/static/css/main.073c9b0a.css.map",
-    "main.cda15b43.js.map": "/germanolleunlp.github.io/static/js/main.cda15b43.js.map",
-    "787.8b4e05c0.chunk.js.map": "/germanolleunlp.github.io/static/js/787.8b4e05c0.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.e275a006.js",
+    "static/js/787.8b4e05c0.chunk.js": "/static/js/787.8b4e05c0.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.e275a006.js.map": "/static/js/main.e275a006.js.map",
+    "787.8b4e05c0.chunk.js.map": "/static/js/787.8b4e05c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.cda15b43.js"
+    "static/js/main.e275a006.js"
   ]
 }
