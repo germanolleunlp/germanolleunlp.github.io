@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Summary from "./Summary";
+import FollowMe from "./FollowMe";
+import NavigationDots from "./NavigationDots";
 
 function App() {
   return (
     <Center>
+      <FollowMe />
       <Summary />
+      <NavigationDots />
     </Center>
   );
 }
