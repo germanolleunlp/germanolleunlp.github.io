@@ -1,12 +1,14 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
 import styled from 'styled-components';
+import BurgerMenu from "./BurgerMenu";
 import FollowMe from "./FollowMe";
 import NavigationDots from "./NavigationDots";
 
 function Layout() {
   return (
     <Center>
+      <BurgerMenu />
       <FollowMe />
       <Content>
         <Outlet />
