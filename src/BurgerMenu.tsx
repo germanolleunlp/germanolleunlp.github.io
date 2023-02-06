@@ -69,10 +69,10 @@ const Menu = styled.div<{isOpen: boolean}>`
   max-width: 75%;
   overflow: hidden;
   background: #0e1111;
-  left: ${({isOpen}) => isOpen ? '0' : '-100%'};
-  visibility: ${({isOpen}) => isOpen ? 'visible' : 'hidden'};
   transition: all .6s;
   z-index: 10001;
+  left: ${({isOpen}) => isOpen ? '0' : '-100%'};
+  visibility: ${({isOpen}) => isOpen ? 'visible' : 'hidden'};
 `
 
 const Close = styled.div<{isOpen: boolean}>`
