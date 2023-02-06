@@ -46,8 +46,6 @@ const StyledVertical = styled(Vertical)`
 
   a {
     transition: all .4s ease-in-out 0s;
-    color: inherit;
-    text-decoration: none;
     &:hover,
     &:focus {
       font-size: 24px;

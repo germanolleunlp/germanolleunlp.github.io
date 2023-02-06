@@ -36,11 +36,6 @@ const StyledVertical = styled(Vertical)`
   }
 
   a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    outline: none;
-
     .circle {
       width: 10px;
       height: 10px;

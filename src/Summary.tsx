@@ -4,32 +4,30 @@ import { TypeAnimation } from 'react-type-animation';
 
 function Summary() {
   return (
-    <div style={{ margin: 'auto'}}>
-      <Code>
-        <TypeAnimation
-          sequence={[
-          "I'm a senior web developer.",
-          1500,
-          "I'm full-stack software engineer.",
-          2000,
-          "I've strong UI/UX skiils.",
-          1500
-        ]}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-        />
-        <br />
-        I create Websites and Applications.
-        <br />
-        Based in Santa Fe, Argentina.
-      </Code>
-    </div>
+    <Code>
+      <TypeAnimation
+        sequence={[
+        "I'm a senior web developer.",
+        1500,
+        "I'm full-stack software engineer.",
+        2000,
+        "I've strong UI/UX skiils.",
+        1500
+      ]}
+        wrapper="span"
+        cursor={true}
+        repeat={Infinity}
+      />
+      <br />
+      I create Websites and Applications.
+      <br />
+      Based in Santa Fe, Argentina.
+    </Code>
   );
 }
 
 const Code = styled.h1`
-  margin: 2rem 0;
+  margin: 0;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.4;

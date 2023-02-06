@@ -1,24 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Routes, Route } from "react-router-dom";
+import Layout from './Layout';
+import NoMatch from './NoMatch';
 import Summary from "./Summary";
-import FollowMe from "./FollowMe";
-import NavigationDots from "./NavigationDots";
 
 function App() {
   return (
-    <Center>
-      <FollowMe />
-      <Summary />
-      <NavigationDots />
-    </Center>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Summary />} />
+        <Route path="*" element={<NoMatch />} />
+      </Route>
+    </Routes>
   );
 }
-
-const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 0 1rem;
-`
 
 export default App;
