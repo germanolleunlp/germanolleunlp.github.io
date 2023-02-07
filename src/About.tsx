@@ -1,6 +1,55 @@
 import React from 'react'
+import styled from 'styled-components'
+import type { IconType } from 'react-icons'
+import { FaGithub } from 'react-icons/fa'
 import Dot from './Dot'
 import { Title, InlineContent } from './Base'
+
+interface SkillProps {
+  key: string
+  title: string
+  description: string
+  icon: IconType
+}
+
+const SKILLS: SkillProps[] = [
+  {
+    key: 'web_design',
+    title: 'Web Design',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    icon: FaGithub,
+  },
+  {
+    key: 'development',
+    title: 'Development',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    icon: FaGithub,
+  },
+  {
+    key: 'ui_ux',
+    title: 'UI/UX Designer',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    icon: FaGithub,
+  },
+  {
+    key: 'graphic_design',
+    title: 'Graphic Design',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    icon: FaGithub,
+  },
+  {
+    key: 'mobile',
+    title: 'Mobile Apps',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    icon: FaGithub,
+  },
+  {
+    key: 'marketing',
+    title: 'Marketing Online',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    icon: FaGithub,
+  },
+]
 
 function About() {
   return (
@@ -14,9 +63,30 @@ function About() {
           ut labore et dolore magna aliqua.Ut enim ad minim enim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+        {SKILLS.map(({ key, title, description, icon: Icon }: SkillProps) => (
+          <InlineContent key={key} style={{ width: '50%', gap: 20 }}>
+            <Dot icon={<Icon />} />
+            <Skill>
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </Skill>
+          </InlineContent>
+        ))}
       </div>
     </InlineContent>
   )
 }
+
+const Skill = styled.div`
+  margin: 0 0 1.5rem 0;
+
+  h4 {
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+  }
+  p {
+    margin: 0;
+  }
+`
 
 export default About

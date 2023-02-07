@@ -25,5 +25,5 @@ export const Title = styled.h3`
 
 export const InlineContent = styled.div`
   display: inline-flex;
-  gap: 20px;
+  gap: 50px;
 `

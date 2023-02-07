@@ -33,7 +33,7 @@ const StyledDot = styled.div`
 `
 
 const Content = styled.div<{ bottom: boolean }>`
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 15px;
 `
 
 const Text = styled.h3<{ bottom: boolean }>`
@@ -42,6 +42,9 @@ const Text = styled.h3<{ bottom: boolean }>`
   font-weight: 700;
 `
 
-const Icon = styled.span``
+const Icon = styled.span`
+  display: block;
+  font-size: 38px;
+`
 
 export default Dot
