@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import styled from 'styled-components';
 import { motion } from "framer-motion";
+import styled from "styled-components";
+
 import BurgerMenu from "./BurgerMenu";
 import FollowMe from "./FollowMe";
 import NavigationDots from "./NavigationDots";
@@ -44,14 +45,14 @@ function Layout() {
       </Content>
       <NavigationDots />
     </Center>
-    );
+  );
 }
 
 const Center = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-`
+`;
 
 const Content = styled.div`
   flex: 1;
@@ -60,6 +61,6 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 3rem;
-`
+`;
 
 export default Layout;

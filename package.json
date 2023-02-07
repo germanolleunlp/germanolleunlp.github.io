@@ -21,7 +21,11 @@
     "start": "GENERATE_SOURCEMAP=false BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier-eslint \"src/**/*.{js,jsx,ts,tsx}\" --write",
+    "lint:js": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --max-warnings=0 --fix",
+    "lint": "npm run lint:js",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +54,13 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
-    "gh-pages": "^5.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "gh-pages": "^5.0.0",
+    "lint-staged": "^13.1.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }

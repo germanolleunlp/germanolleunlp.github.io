@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Vertical = styled.div`
   display: inline-flex;
@@ -6,4 +6,4 @@ export const Vertical = styled.div`
   align-items: center;
   position: fixed;
   height: 100%;
-`
+`;
