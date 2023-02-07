@@ -26,6 +26,7 @@ function NavigationDots() {
 const StyledVertical = styled(Vertical)`
   color: white;
   right: 0;
+  width: 3rem;
 
   ul {
     list-style: none;
@@ -36,6 +37,7 @@ const StyledVertical = styled(Vertical)`
   li {
     outline: inherit;
     margin-bottom: 14px;
+    padding: 0;
   }
 `
 

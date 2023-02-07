@@ -27,6 +27,7 @@ const StyledVertical = styled(Vertical)`
   gap: 20px;
   font-size: 14px;
   color: white;
+  width: 3rem;
 
   ul {
     list-style: none;
@@ -57,14 +58,15 @@ const StyledVertical = styled(Vertical)`
     width: 3px;
     height: 40px;
     background: white;
+    margin-bottom: 25px;
   }
 
   p {
     font-weight: 600;
     line-height: 1.2;
     white-space: nowrap;
-    width: 100px;
     transform: rotate(-90deg);
+    margin: 0;
   }
 `
 

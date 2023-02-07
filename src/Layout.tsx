@@ -51,13 +51,11 @@ const Center = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 0 1rem;
 `
 
 const Content = styled.div`
   align-self: center;
-  margin: auto 50px;
-  padding: 1rem;
+  margin: auto 3rem;
 `
 
 export default Layout;

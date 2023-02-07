@@ -27,12 +27,19 @@ function Summary() {
 }
 
 const Code = styled.h1`
-  margin: 0;
-  font-size: 42px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.4;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  @media screen and (max-width: 1400px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 460px) {
+    font-size: 1rem;
+  }
 `
 
 export default Summary;

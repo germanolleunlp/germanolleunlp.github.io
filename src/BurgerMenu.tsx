@@ -84,6 +84,7 @@ const Overlay = styled.div<{isOpen: boolean}>`
 
 const Menu = styled.div<{isOpen: boolean}>`
   position: fixed;
+  padding: 1rem;
   width: 345px;
   height: 100%;
   min-height: 100%;
@@ -97,6 +98,7 @@ const Menu = styled.div<{isOpen: boolean}>`
 
   ul {
     list-style: none;
+    padding: 0;
   }
 
   li {
@@ -115,9 +117,15 @@ const Item = styled.span<{isActive: boolean}>`
   }
 
   span {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+    @media screen and (max-width: 800px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 1rem;
+    }
   }
 `
 
