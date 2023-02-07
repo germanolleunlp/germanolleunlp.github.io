@@ -63,6 +63,7 @@ const Content = styled.div`
   margin: 0 auto;
   padding: 0 3rem;
   max-width: 1140px;
+  background-color: var(--main-bg);
 `
 
 export default Layout

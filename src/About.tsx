@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import type { IconType } from 'react-icons'
-import { FaGithub } from 'react-icons/fa'
+import { MdWeb, MdDeveloperBoard } from 'react-icons/md'
+import { TfiBrushAlt } from 'react-icons/tfi'
+import { HiPhotograph } from 'react-icons/hi'
 import Dot from './Dot'
 import { Title, InlineContent } from './Base'
 
@@ -17,37 +19,25 @@ const SKILLS: SkillProps[] = [
     key: 'web_design',
     title: 'Web Design',
     description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
-    icon: FaGithub,
+    icon: MdWeb,
   },
   {
     key: 'development',
     title: 'Development',
     description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
-    icon: FaGithub,
+    icon: MdDeveloperBoard,
   },
   {
     key: 'ui_ux',
     title: 'UI/UX Designer',
     description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
-    icon: FaGithub,
+    icon: TfiBrushAlt,
   },
   {
     key: 'graphic_design',
     title: 'Graphic Design',
     description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
-    icon: FaGithub,
-  },
-  {
-    key: 'mobile',
-    title: 'Mobile Apps',
-    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
-    icon: FaGithub,
-  },
-  {
-    key: 'marketing',
-    title: 'Marketing Online',
-    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
-    icon: FaGithub,
+    icon: HiPhotograph,
   },
 ]
 
