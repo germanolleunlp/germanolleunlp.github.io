@@ -44,7 +44,7 @@ const SKILLS: SkillProps[] = [
 function About() {
   return (
     <InlineContent>
-      <img src='http://miro.afracode.com/assets/images/about/5-1.jpg' />
+      <img width={400} height={'auto'} src='https://images.pexels.com/photos/5926370/pexels-photo-5926370.jpeg' />
       <div>
         <Dot text='About Me' />
         <Title>Hello, I am German Olle</Title>
