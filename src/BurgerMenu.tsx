@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
 import { Vertical } from './Base';
 import Circle from './Circle';
 import URLS from './Urls';
@@ -20,6 +21,9 @@ function BurgerMenu() {
       </Button>
       <Overlay isOpen={isOpen}>
         <Menu isOpen={isOpen}>
+          <CloseButton onClick={close}>
+            <AiOutlineClose />
+          </CloseButton>
           <Vertical>
             <ul>
               {URLS.map(({ key, name, url }) => (
@@ -37,7 +41,7 @@ function BurgerMenu() {
             </ul>
           </Vertical>
         </Menu>
-        <Close isOpen={isOpen} onClick={close}/>
+        <Close isOpen={isOpen} onClick={close} />
       </Overlay>
     </>
   );
@@ -48,7 +52,7 @@ const Button = styled.button`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: end;
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   top: 1rem;
   right: 1rem;
@@ -127,6 +131,17 @@ const Item = styled.span<{isActive: boolean}>`
       font-size: 1rem;
     }
   }
+`
+
+const CloseButton = styled.button`
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 `
 
 const Close = styled.div<{isOpen: boolean}>`

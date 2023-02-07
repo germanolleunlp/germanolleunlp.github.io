@@ -54,8 +54,12 @@ const Center = styled.div`
 `
 
 const Content = styled.div`
-  align-self: center;
-  margin: auto 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
 `
 
 export default Layout;

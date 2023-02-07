@@ -27,6 +27,7 @@ function Summary() {
 }
 
 const Code = styled.h1`
+  margin: 0;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.4;
