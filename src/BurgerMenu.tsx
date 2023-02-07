@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
+import { Vertical } from './Base';
+import Circle from './Circle';
+import URLS from './Urls';
 
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -15,7 +19,24 @@ function BurgerMenu() {
         <span />
       </Button>
       <Overlay isOpen={isOpen}>
-        <Menu isOpen={isOpen} />
+        <Menu isOpen={isOpen}>
+          <Vertical>
+            <ul>
+              {URLS.map(({ key, name, url }) => (
+                <li key={key}>
+                  <NavLink to={url}>
+                    {({ isActive }) => (
+                      <Item isActive={isActive}>
+                        <Circle isActive={isActive} />
+                        <span>{name}</span>
+                      </Item>
+                    )}
+                  </NavLink>
+                </li>
+                ))}
+            </ul>
+          </Vertical>
+        </Menu>
         <Close isOpen={isOpen} onClick={close}/>
       </Overlay>
     </>
@@ -73,6 +94,31 @@ const Menu = styled.div<{isOpen: boolean}>`
   z-index: 10001;
   left: ${({isOpen}) => isOpen ? '0' : '-100%'};
   visibility: ${({isOpen}) => isOpen ? 'visible' : 'hidden'};
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    outline: inherit;
+    margin-bottom: 14px;
+  }
+`
+
+const Item = styled.span<{isActive: boolean}>`
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  opacity: ${({isActive}) => isActive ? '1' : '0.75'};
+  &:hover {
+    opacity: 1
+  }
+
+  span {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 `
 
 const Close = styled.div<{isOpen: boolean}>`

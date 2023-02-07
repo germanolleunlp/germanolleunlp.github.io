@@ -1,31 +1,38 @@
+export const HOME = '/'
+export const ABOUT = '/about'
+export const RESUME = '/resume'
+export const SERVICE = '/service'
+export const PORTFOLIO = '/portfolio'
+export const CONTACT = '/contact'
+
 const URLS = [
   {
-    url: '/',
+    url: HOME,
     key: 'home',
     name: 'Home'
   },
   {
-    url: '/about',
+    url: ABOUT,
     key: 'about',
     name: 'About'
   },
   {
-    url: '/resume',
+    url: RESUME,
     key: 'resume',
     name: 'Resume'
   },
   {
-    url: '/service',
+    url: SERVICE,
     key: 'service',
     name: 'Service'
   },
   {
-    url: '/portfolio',
+    url: PORTFOLIO,
     key: 'portfolio',
     name: 'Portfolio'
   },
   {
-    url: '/contact',
+    url: CONTACT,
     key: 'contact',
     name: 'Contact'
   }

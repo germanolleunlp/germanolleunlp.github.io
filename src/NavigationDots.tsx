@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
 import { Vertical } from './Base';
-import URLS from './Urls'
-
+import Circle from './Circle';
+import URLS from './Urls';
 
 function NavigationDots() {
   return (
@@ -10,14 +11,16 @@ function NavigationDots() {
       <ul>
         {URLS.map(({ key, url }) => (
           <li key={key}>
-            <a href={url}>
-              <span className="circle"></span>
-            </a>
+            <NavLink to={url}>
+              {({ isActive }) => (
+                <Circle isActive={isActive} />
+              )}
+            </NavLink>
           </li>
           ))}
       </ul>
     </StyledVertical>
-    );
+  );
 }
 
 const StyledVertical = styled(Vertical)`
@@ -33,25 +36,6 @@ const StyledVertical = styled(Vertical)`
   li {
     outline: inherit;
     margin-bottom: 14px;
-  }
-
-  a {
-    .circle {
-      width: 10px;
-      height: 10px;
-      display: block;
-      border-radius: 50%;
-      border: 1px solid white;
-      transition: background-color .3s ease-in-out 0s;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      .circle {
-        background-color: white;
-      }
-    }
   }
 `
 
