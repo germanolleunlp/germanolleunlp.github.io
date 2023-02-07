@@ -17,6 +17,7 @@ function Summary() {
         wrapper='span'
         cursor={true}
         repeat={Infinity}
+        style={{ color: 'var(--main-secondary)' }}
       />
       <br />
       I create Websites and Applications.
