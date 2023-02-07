@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 interface CircleProps {
-  isActive: boolean;
+  isActive: boolean
 }
 
 function Circle({ isActive = false }: CircleProps) {
-  return <Dot isActive={isActive} />;
+  return <Dot isActive={isActive} />
 }
 
 const Dot = styled.span<CircleProps>`
@@ -15,7 +15,7 @@ const Dot = styled.span<CircleProps>`
   display: block;
   border-radius: 50%;
   border: 1px solid white;
-  background-color: ${({ isActive }) => (isActive ? "white" : "transparent")};
-`;
+  background-color: ${({ isActive }) => (isActive ? 'white' : 'transparent')};
+`
 
-export default Circle;
+export default Circle

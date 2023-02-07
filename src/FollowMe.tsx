@@ -1,28 +1,20 @@
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import styled from "styled-components";
+import React from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import styled from 'styled-components'
 
-import { Vertical } from "./Base";
+import { Vertical } from './Base'
 
 function FollowMe() {
   return (
     <StyledVertical>
       <ul>
         <li>
-          <a
-            href="https://github.com/germanolleunlp"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href='https://github.com/germanolleunlp' rel='noreferrer' target='_blank'>
             <FaGithub />
           </a>
         </li>
         <li>
-          <a
-            href="https://linkedin.com/in/germanolle"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href='https://linkedin.com/in/germanolle' rel='noreferrer' target='_blank'>
             <FaLinkedin />
           </a>
         </li>
@@ -30,7 +22,7 @@ function FollowMe() {
       <span />
       <p>Follow Me</p>
     </StyledVertical>
-  );
+  )
 }
 
 const StyledVertical = styled(Vertical)`
@@ -81,6 +73,6 @@ const StyledVertical = styled(Vertical)`
     transform: rotate(-90deg);
     margin: 0;
   }
-`;
+`
 
-export default FollowMe;
+export default FollowMe

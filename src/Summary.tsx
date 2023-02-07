@@ -1,6 +1,6 @@
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
-import styled from "styled-components";
+import React from 'react'
+import { TypeAnimation } from 'react-type-animation'
+import styled from 'styled-components'
 
 function Summary() {
   return (
@@ -12,9 +12,9 @@ function Summary() {
           "I'm full-stack software engineer.",
           2000,
           "I've strong UI/UX skiils.",
-          1500
+          1500,
         ]}
-        wrapper="span"
+        wrapper='span'
         cursor={true}
         repeat={Infinity}
       />
@@ -23,7 +23,7 @@ function Summary() {
       <br />
       Based in Santa Fe, Argentina.
     </Code>
-  );
+  )
 }
 
 const Code = styled.h1`
@@ -31,8 +31,7 @@ const Code = styled.h1`
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.4;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   @media screen and (max-width: 1400px) {
     font-size: 2rem;
   }
@@ -42,6 +41,6 @@ const Code = styled.h1`
   @media screen and (max-width: 460px) {
     font-size: 1rem;
   }
-`;
+`
 
-export default Summary;
+export default Summary

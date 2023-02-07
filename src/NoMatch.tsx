@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { HOME } from "./Urls";
+import { HOME } from './Urls'
 
 const NoMatch = () => (
   <div>
@@ -10,6 +10,6 @@ const NoMatch = () => (
       <Link to={HOME}>Go to the home page</Link>
     </p>
   </div>
-);
+)
 
-export default NoMatch;
+export default NoMatch

@@ -1,32 +1,32 @@
-import React from "react";
-import { Outlet, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
-import styled from "styled-components";
+import React from 'react'
+import { Outlet, useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import styled from 'styled-components'
 
-import BurgerMenu from "./BurgerMenu";
-import FollowMe from "./FollowMe";
-import NavigationDots from "./NavigationDots";
+import BurgerMenu from './BurgerMenu'
+import FollowMe from './FollowMe'
+import NavigationDots from './NavigationDots'
 
 const pageVariants = {
   initial: {
-    opacity: 0
+    opacity: 0,
   },
   in: {
-    opacity: 1
+    opacity: 1,
   },
   out: {
-    opacity: 0
-  }
-};
+    opacity: 0,
+  },
+}
 
 const pageTransition = {
-  type: "tween",
-  ease: "linear",
-  duration: 2
-};
+  type: 'tween',
+  ease: 'linear',
+  duration: 2,
+}
 
 function Layout() {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation()
 
   return (
     <Center>
@@ -35,8 +35,8 @@ function Layout() {
       <Content>
         <motion.div
           key={pathname}
-          initial="initial"
-          animate="in"
+          initial='initial'
+          animate='in'
           variants={pageVariants}
           transition={pageTransition}
         >
@@ -45,14 +45,14 @@ function Layout() {
       </Content>
       <NavigationDots />
     </Center>
-  );
+  )
 }
 
 const Center = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-`;
+`
 
 const Content = styled.div`
   flex: 1;
@@ -61,6 +61,6 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 3rem;
-`;
+`
 
-export default Layout;
+export default Layout

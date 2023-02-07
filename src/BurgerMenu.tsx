@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import React, { useState } from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
 
-import { Vertical } from "./Base";
-import Circle from "./Circle";
-import URLS from "./Urls";
+import { Vertical } from './Base'
+import Circle from './Circle'
+import URLS from './Urls'
 
 function BurgerMenu() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const open = () => setIsOpen(true);
-  const close = () => setIsOpen(false);
+  const open = () => { setIsOpen(true); }
+  const close = () => { setIsOpen(false); }
 
   return (
     <>
@@ -45,7 +45,7 @@ function BurgerMenu() {
         <Close isOpen={isOpen} onClick={close} />
       </Overlay>
     </>
-  );
+  )
 }
 
 const Button = styled.button`
@@ -73,7 +73,7 @@ const Button = styled.button`
   span:nth-child(even) {
     width: 30px;
   }
-`;
+`
 
 const Overlay = styled.div<{ isOpen: boolean }>`
   position: fixed;
@@ -82,10 +82,10 @@ const Overlay = styled.div<{ isOpen: boolean }>`
   height: 100%;
   transition: all 0.6s;
   z-index: 10000;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
-`;
+  left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+`
 
 const Menu = styled.div<{ isOpen: boolean }>`
   position: fixed;
@@ -98,8 +98,8 @@ const Menu = styled.div<{ isOpen: boolean }>`
   background: #0e1111;
   transition: all 0.6s;
   z-index: 10001;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
 
   ul {
     list-style: none;
@@ -110,13 +110,13 @@ const Menu = styled.div<{ isOpen: boolean }>`
     outline: inherit;
     margin-bottom: 14px;
   }
-`;
+`
 
 const Item = styled.span<{ isActive: boolean }>`
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  opacity: ${({ isActive }) => (isActive ? "1" : "0.75")};
+  opacity: ${({ isActive }) => (isActive ? '1' : '0.75')};
   &:hover {
     opacity: 1;
   }
@@ -132,7 +132,7 @@ const Item = styled.span<{ isActive: boolean }>`
       font-size: 1rem;
     }
   }
-`;
+`
 
 const CloseButton = styled.button`
   display: flex;
@@ -143,7 +143,7 @@ const CloseButton = styled.button`
   color: white;
   font-size: 2rem;
   cursor: pointer;
-`;
+`
 
 const Close = styled.div<{ isOpen: boolean }>`
   top: 0;
@@ -153,7 +153,7 @@ const Close = styled.div<{ isOpen: boolean }>`
   opacity: 0.75;
   position: fixed;
   background: #3b444b;
-  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
-`;
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+`
 
-export default BurgerMenu;
+export default BurgerMenu
