@@ -71,7 +71,7 @@ const Button = styled.button`
   span {
     height: 3px;
     display: block;
-    background-color: white;
+    background-color: var(--main-primary);
     width: 36px;
   }
 
@@ -100,7 +100,7 @@ const Menu = styled.div<{ isOpen: boolean }>`
   min-height: 100%;
   max-width: 75%;
   overflow: hidden;
-  background: #0e1111;
+  background: var(--main-bg);
   transition: all 0.6s;
   z-index: 10001;
   left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -145,7 +145,7 @@ const CloseButton = styled.button`
   padding: 0;
   background: transparent;
   border: none;
-  color: white;
+  color: var(--main-primary);
   font-size: 2rem;
   cursor: pointer;
 `
@@ -157,7 +157,7 @@ const Close = styled.div<{ isOpen: boolean }>`
   height: 100%;
   opacity: 0.75;
   position: fixed;
-  background: #3b444b;
+  background: var(--main-bg);
   visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
 `
 

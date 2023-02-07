@@ -22,7 +22,7 @@ const pageVariants = {
 const pageTransition = {
   type: 'tween',
   ease: 'linear',
-  duration: 2,
+  duration: 1.5,
 }
 
 function Layout() {
@@ -60,7 +60,9 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 3rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  max-width: 1140px;
 `
 
 export default Layout

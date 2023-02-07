@@ -21,7 +21,7 @@ function NavigationDots() {
 }
 
 const StyledVertical = styled(Vertical)`
-  color: white;
+  color: var(--main-primary);
   right: 0;
   width: 3rem;
 

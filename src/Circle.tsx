@@ -14,8 +14,8 @@ const Dot = styled.span<CircleProps>`
   height: 10px;
   display: block;
   border-radius: 50%;
-  border: 1px solid white;
-  background-color: ${({ isActive }) => (isActive ? 'white' : 'transparent')};
+  border: 1px solid var(--main-primary);
+  background-color: ${({ isActive }) => (isActive ? 'var(--main-primary)' : 'transparent')};
 `
 
 export default Circle

@@ -30,8 +30,8 @@ const StyledVertical = styled(Vertical)`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-size: 14px;
-  color: white;
+  font-size: 1rem;
+  color: var(--main-primary);
   width: 3rem;
 
   ul {
@@ -54,7 +54,7 @@ const StyledVertical = styled(Vertical)`
     transition: all 0.4s ease-in-out 0s;
     &:hover,
     &:focus {
-      font-size: 24px;
+      font-size: 2rem;
     }
   }
 
@@ -62,7 +62,7 @@ const StyledVertical = styled(Vertical)`
     display: block;
     width: 3px;
     height: 40px;
-    background: white;
+    background: var(--main-primary);
     margin-bottom: 25px;
   }
 
