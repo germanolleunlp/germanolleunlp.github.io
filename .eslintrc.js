@@ -25,7 +25,9 @@ module.exports = {
     'prettier',
     '@typescript-eslint'
   ],
-  rules: {},
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off'
+  },
   settings: {
     react: {
       version: 'detect'

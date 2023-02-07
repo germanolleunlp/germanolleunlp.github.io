@@ -10,8 +10,13 @@ import URLS from './Urls'
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const open = () => { setIsOpen(true); }
-  const close = () => { setIsOpen(false); }
+  const open = () => {
+    setIsOpen(true)
+  }
+
+  const close = () => {
+    setIsOpen(false)
+  }
 
   return (
     <>
