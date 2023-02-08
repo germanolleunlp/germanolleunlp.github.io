@@ -95,12 +95,12 @@ const Overlay = styled.div<{ isOpen: boolean }>`
 const Menu = styled.div<{ isOpen: boolean }>`
   position: fixed;
   padding: 1rem;
-  width: 345px;
+  width: 365px;
   height: 100%;
   min-height: 100%;
   max-width: 75%;
   overflow: hidden;
-  background: var(--main-bg);
+  background: var(--main-bg-primary);
   transition: all 0.6s;
   z-index: 10001;
   left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -157,7 +157,7 @@ const Close = styled.div<{ isOpen: boolean }>`
   height: 100%;
   opacity: 0.75;
   position: fixed;
-  background: var(--main-bg);
+  background: var(--main-bg-secondary);
   visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
 `
 

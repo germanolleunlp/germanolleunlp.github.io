@@ -8,7 +8,9 @@ import NoMatch from './NoMatch'
 import Portfolio from './Portfolio'
 import Resume from './Resume'
 import Summary from './Summary'
-import { ABOUT, CONTACT, HOME, PORTFOLIO, RESUME } from './Urls'
+import Testimonial from './Testimonial'
+
+import { ABOUT, CONTACT, HOME, PORTFOLIO, RESUME, TESTIMONIAL } from './Urls'
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path={ABOUT} element={<About />} />
         <Route path={RESUME} element={<Resume />} />
         <Route path={PORTFOLIO} element={<Portfolio />} />
+        <Route path={TESTIMONIAL} element={<Testimonial />} />
         <Route path={CONTACT} element={<Contact />} />
         <Route path='*' element={<NoMatch />} />
       </Route>

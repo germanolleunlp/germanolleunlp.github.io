@@ -67,8 +67,8 @@ export const Heading = styled.h1`
   }
 `
 
-export const InlineContent = styled.div<{aligned?: boolean}>`
+export const InlineContent = styled.div<{ aligned?: boolean }>`
   display: inline-flex;
-  align-items: ${({ aligned = false }) => aligned ? 'center' : 'unset'};
+  align-items: ${({ aligned = false }) => (aligned ? 'center' : 'unset')};
   gap: 50px;
 `
