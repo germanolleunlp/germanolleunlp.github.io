@@ -95,8 +95,8 @@ function Resume() {
       <Dot text='Resume' bottom />
       <Heading>Education & Experience</Heading>
       <InlineContent>
-        <Timeline width='40%' title='Education' items={EDUCATION} />
-        <Timeline width='60%' title='Experience' items={EXPERIENCE} />
+        <Timeline title='Education' items={EDUCATION} />
+        <Timeline title='Experience' items={EXPERIENCE} />
       </InlineContent>
     </>
   )

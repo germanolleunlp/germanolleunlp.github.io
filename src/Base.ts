@@ -71,4 +71,8 @@ export const InlineContent = styled.div<{ aligned?: boolean }>`
   display: inline-flex;
   align-items: ${({ aligned = false }) => (aligned ? 'center' : 'unset')};
   gap: 50px;
+  @media screen and (max-width: 1400px) {
+    display: flex;
+    flex-direction: column;
+  }
 `

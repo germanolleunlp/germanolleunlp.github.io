@@ -7,32 +7,38 @@ import { Vertical } from './Base'
 function FollowMe() {
   return (
     <StyledVertical>
-      <ul>
-        <li>
-          <a href='https://github.com/germanolleunlp' rel='noreferrer' target='_blank'>
-            <FaGithub />
-          </a>
-        </li>
-        <li>
-          <a href='https://linkedin.com/in/germanolle' rel='noreferrer' target='_blank'>
-            <FaLinkedin />
-          </a>
-        </li>
-      </ul>
-      <span />
-      <p>Follow Me</p>
+      <Content>
+        <ul>
+          <li>
+            <a href='https://github.com/germanolleunlp' rel='noreferrer' target='_blank'>
+              <FaGithub />
+            </a>
+          </li>
+          <li>
+            <a href='https://linkedin.com/in/germanolle' rel='noreferrer' target='_blank'>
+              <FaLinkedin />
+            </a>
+          </li>
+        </ul>
+        <span />
+        <p>Follow Me</p>
+      </Content>
     </StyledVertical>
   )
 }
 
 const StyledVertical = styled(Vertical)`
+  color: var(--main-primary);
+  left: 0;
+  width: 3rem;
+`
+
+const Content = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
   font-size: 1rem;
-  color: var(--main-primary);
-  width: 3rem;
+  width: 100%;
 
   ul {
     list-style: none;
@@ -63,7 +69,7 @@ const StyledVertical = styled(Vertical)`
     width: 3px;
     height: 40px;
     background: var(--main-primary);
-    margin-bottom: 25px;
+    margin: 0 auto 50px auto;
   }
 
   p {

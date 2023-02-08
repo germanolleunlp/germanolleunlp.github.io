@@ -52,6 +52,25 @@ const Center = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 1400px;
+  @media screen and (max-width: 1550px) {
+    width: 1280px;
+  }
+  @media screen and (max-width: 1400px) {
+    width: 900px;
+  }
+  @media screen and (max-width: 1040px) {
+    width: 700px;
+  }
+  @media screen and (max-width: 840px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 720px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 620px) {
+    width: 100%;
+  }
 `
 
 const Content = styled.div`
@@ -60,10 +79,12 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 3rem;
-  width: 1140px;
+  flex-wrap: wrap;
+  padding: 3rem;
   background-color: var(--main-bg-primary);
+  @media screen and (max-width: 620px) {
+    background-color: var(--main-bg-primary-alpha);
+  }
 `
 
 export default Layout
