@@ -1,7 +1,6 @@
 export const HOME = '/'
 export const ABOUT = '/about'
 export const RESUME = '/resume'
-export const SERVICE = '/service'
 export const PORTFOLIO = '/portfolio'
 export const CONTACT = '/contact'
 
@@ -20,11 +19,6 @@ const URLS = [
     url: RESUME,
     key: 'resume',
     name: 'Resume',
-  },
-  {
-    url: SERVICE,
-    key: 'service',
-    name: 'Service',
   },
   {
     url: PORTFOLIO,

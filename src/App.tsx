@@ -7,9 +7,8 @@ import Layout from './Layout'
 import NoMatch from './NoMatch'
 import Portfolio from './Portfolio'
 import Resume from './Resume'
-import Service from './Service'
 import Summary from './Summary'
-import { ABOUT, CONTACT, HOME, PORTFOLIO, RESUME, SERVICE } from './Urls'
+import { ABOUT, CONTACT, HOME, PORTFOLIO, RESUME } from './Urls'
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Route index element={<Summary />} />
         <Route path={ABOUT} element={<About />} />
         <Route path={RESUME} element={<Resume />} />
-        <Route path={SERVICE} element={<Service />} />
         <Route path={PORTFOLIO} element={<Portfolio />} />
         <Route path={CONTACT} element={<Contact />} />
         <Route path='*' element={<NoMatch />} />

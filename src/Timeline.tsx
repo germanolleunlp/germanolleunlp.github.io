@@ -10,19 +10,21 @@ export interface ItemProps {
   company: string
   icon: IconType
   description: string
+  skills?: string[]
 }
 
 interface TimelineProps {
   title: string
   items: ItemProps[]
+  width?: string
 }
 
-function Timeline({ title, items }: TimelineProps) {
+function Timeline({ title, items, width = 'unset' }: TimelineProps) {
   return (
-    <div>
+    <div style={{ width }}>
       <Subtitle>{title}</Subtitle>
       <Line>
-        {items.map(({ key, title, company, description, icon: Icon }: ItemProps) => (
+        {items.map(({ key, title, company, description, icon: Icon, skills = [] }: ItemProps) => (
           <Item key={key}>
             <div className='content'>
               <InlineContent key={key} style={{ gap: 20 }}>
@@ -33,6 +35,11 @@ function Timeline({ title, items }: TimelineProps) {
                 </Header>
               </InlineContent>
               <p>{description}</p>
+              <Skills>
+                {skills?.map((skill: string) => (
+                  <Skill key={skill}>{skill}</Skill>
+                ))}
+              </Skills>
             </div>
           </Item>
         ))}
@@ -89,6 +96,18 @@ const Header = styled.div`
   h5 {
     margin: 0;
   }
+`
+
+const Skills = styled.div`
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--main-secondary);
+`
+
+const Skill = styled.label`
+  padding: 5px 15px;
+  border: 1px solid var(--main-secondary);
 `
 
 export default Timeline

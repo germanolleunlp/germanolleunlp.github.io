@@ -1,11 +1,11 @@
 import React from 'react'
 import { MdWeb } from 'react-icons/md'
 import Dot from './Dot'
-import { Title, InlineContent } from './Base'
+import { Heading, InlineContent } from './Base'
 import Timeline from './Timeline'
 import type { ItemProps } from './Timeline'
 
-const EXPERIENCE: ItemProps[] = [
+const EDUCATION: ItemProps[] = [
   {
     key: 'freelance',
     title: 'Freelance FullStack Developer',
@@ -29,14 +29,74 @@ const EXPERIENCE: ItemProps[] = [
   },
 ]
 
+const EXPERIENCE: ItemProps[] = [
+  {
+    key: 'freelance',
+    title: 'Freelance FullStack Developer',
+    company: 'Google INC | New York (2016-2018)',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    skills: [
+      'JavaScript',
+      'ReactJS',
+      'NodeJS',
+      'GraphQL',
+      'Python',
+      'Django',
+      'AWS',
+      'Docker',
+      'Ruby',
+      'Ruby On Rails',
+    ],
+    icon: MdWeb,
+  },
+  {
+    key: 'frontend',
+    title: 'Front-End Developer',
+    company: 'Amazon INC | New York (2016-2018)',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    skills: [
+      'JavaScript',
+      'ReactJS',
+      'NodeJS',
+      'GraphQL',
+      'Python',
+      'Django',
+      'AWS',
+      'Docker',
+      'Ruby',
+      'Ruby On Rails',
+    ],
+    icon: MdWeb,
+  },
+  {
+    key: 'backend',
+    title: 'Back-End Developer',
+    company: 'Facebook INC | New York (2016-2018)',
+    description: 'Lorem ipsum dolor sit amet Consectetur adipisicing elit.',
+    skills: [
+      'JavaScript',
+      'ReactJS',
+      'NodeJS',
+      'GraphQL',
+      'Python',
+      'Django',
+      'AWS',
+      'Docker',
+      'Ruby',
+      'Ruby On Rails',
+    ],
+    icon: MdWeb,
+  },
+]
+
 function Resume() {
   return (
     <>
-      <Dot text='Resume' />
-      <Title>Education & Experience</Title>
+      <Dot text='Resume' bottom />
+      <Heading>Education & Experience</Heading>
       <InlineContent>
-        <Timeline title='Education' items={EXPERIENCE} />
-        <Timeline title='Experience' items={EXPERIENCE} />
+        <Timeline width='40%' title='Education' items={EDUCATION} />
+        <Timeline width='60%' title='Experience' items={EXPERIENCE} />
       </InlineContent>
     </>
   )
