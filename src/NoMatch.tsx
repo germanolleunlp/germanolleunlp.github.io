@@ -1,15 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { Title } from './Base'
+import Dot from './Dot'
+import BackLink from './BackLink'
 import { HOME } from './Urls'
 
 function NoMatch() {
   return (
     <div>
-      <h2>Nothing to see here!</h2>
-      <p>
-        <Link to={HOME}>Go to the home page</Link>
-      </p>
+      <Dot text='404' />
+      <Title>Nothing to see here!</Title>
+      <img src='/this-is-fine.gif' />
+      <br />
+      <BackLink url={HOME} text='Go to home' />
     </div>
   )
 }

@@ -62,7 +62,7 @@ const Content = styled.div`
   align-items: center;
   margin: 0 auto;
   padding: 0 3rem;
-  max-width: 1140px;
+  width: 1140px;
   background-color: var(--main-bg);
 `
 
