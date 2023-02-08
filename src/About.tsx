@@ -52,29 +52,41 @@ function About() {
           ut labore et dolore magna aliqua.Ut enim ad minim enim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-        {SKILLS.map(({ key, title, description, icon: Icon }: SkillProps) => (
-          <InlineContent key={key} style={{ width: '50%', gap: 20 }}>
-            <Dot icon={<Icon />} />
-            <Skill>
-              <h4>{title}</h4>
-              <p>{description}</p>
+        <Skills>
+          {SKILLS.map(({ key, title, description, icon: Icon }: SkillProps) => (
+            <Skill key={key}>
+              <InlineContent style={{ gap: 20 }}>
+                <Dot icon={<Icon />} />
+                <div>
+                  <h4>{title}</h4>
+                  <p>{description}</p>
+                </div>
+              </InlineContent>
             </Skill>
-          </InlineContent>
-        ))}
+          ))}
+        </Skills>
       </div>
     </InlineContent>
   )
 }
 
 const Skill = styled.div`
-  margin: 0 0 1.5rem 0;
-
+  padding: 1rem;
+  border: 1px solid var(--main-primary);
   h4 {
     margin: 0 0 1rem 0;
     font-weight: 700;
   }
   p {
     margin: 0;
+  }
+`
+
+const Skills = styled.div`
+  display: flex;
+  gap: 20px;
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
   }
 `
 
