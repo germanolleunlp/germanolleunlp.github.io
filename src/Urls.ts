@@ -3,7 +3,7 @@ import Contact from './Contact'
 import Portfolio from './Portfolio'
 import Resume from './Resume'
 import Summary from './Summary'
-import Testimonial from './Testimonial'
+import CustomerStories from './CustomerStories'
 
 export const HOME = '/'
 export const ABOUT = '/about'
@@ -45,7 +45,7 @@ const ALL_URLS = [
     url: TESTIMONIAL,
     key: 'testimonial',
     name: "Customer's Stories",
-    component: Testimonial,
+    component: CustomerStories,
     enabled: true,
   },
   {
