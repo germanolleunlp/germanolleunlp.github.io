@@ -44,6 +44,7 @@ const SKILLS: SkillProps[] = [
 function About() {
   return (
     <InlineContent>
+      <img src='/about.jpg' />
       <div>
         <Dot text='About Me' />
         <Title>Hello, I am German Olle</Title>
@@ -83,10 +84,11 @@ const Skill = styled.div`
 `
 
 const Skills = styled.div`
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
   @media screen and (max-width: 1040px) {
-    flex-direction: column;
+    grid-template-columns: auto;
   }
 `
 

@@ -33,7 +33,7 @@ function BurgerMenu() {
           <Vertical>
             <ul>
               {URLS.map(({ key, name, url }) => (
-                <li key={key}>
+                <li key={key} onClick={close}>
                   <NavLink to={url}>
                     {({ isActive }) => (
                       <Item isActive={isActive}>
@@ -114,6 +114,10 @@ const Menu = styled.div<{ isOpen: boolean }>`
   li {
     outline: inherit;
     margin-bottom: 14px;
+
+    a {
+      display: block;
+    }
   }
 `
 
