@@ -8,6 +8,14 @@ export const Vertical = styled.div`
   height: 100%;
 `
 
+export const FixedCentered = styled.div`
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: var(--main-primary);
+`
+
 export const Title = styled.h1`
   position: relative;
   font-weight: 700;

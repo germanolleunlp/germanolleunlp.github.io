@@ -1,41 +1,30 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-
-import { Vertical } from './Base'
+import { FixedCentered } from './Base'
 import Circle from './Circle'
 import URLS from './Urls'
 
 function NavigationDots() {
   return (
-    <StyledVertical>
-      <ul>
+    <FixedCentered style={{ bottom: '1rem' }}>
+      <Content>
         {URLS.map(({ key, url }) => (
-          <li key={key}>
-            <NavLink to={url}>{({ isActive }) => <Circle isActive={isActive} />}</NavLink>
-          </li>
+          <NavLink key={key} to={url}>
+            {({ isActive }) => <Circle isActive={isActive} />}
+          </NavLink>
         ))}
-      </ul>
-    </StyledVertical>
+      </Content>
+    </FixedCentered>
   )
 }
 
-const StyledVertical = styled(Vertical)`
-  color: var(--main-primary);
-  right: 0;
-  width: 3rem;
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    outline: inherit;
-    margin-bottom: 14px;
-    padding: 0;
-  }
+const Content = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 25px;
 `
 
 export default NavigationDots
