@@ -126,8 +126,10 @@ const Item = styled.span<{ isActive: boolean }>`
   align-items: center;
   gap: 10px;
   opacity: ${({ isActive }) => (isActive ? '1' : '0.75')};
+  color: ${({ isActive }) => (isActive ? 'var(--main-secondary)' : 'inherit')};
   &:hover {
     opacity: 1;
+    color: var(--main-secondary);
   }
 
   span {
